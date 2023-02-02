@@ -1,0 +1,32 @@
+PARA INICIAR EN GIT, UNO DEBE INICIAR SU NOMBRE DE USUARIO Y SU CORREO ELECTRONICO
+$ git config --global user.name "Your Name Comes Here"
+$ git config --global user.email you@yourdomain.example.com
+
+para crear una version nueva de un proyecto o inicar un proyecto
+	-git init// crea el repositorio, el staging y las ramas
+Para agregarlo al repositorio , antes de debe llevarlo al "staging"
+	-git add .//agrega todos los archivos
+ahora para agregarlo al repositorio,debemos igual dejarlo con un mensaje
+	-git commit - m "introduzca el mensaje"
+
+Existe la rama "master", la cual es la rama principal del proyecto o rama official
+-podemos crear una rama de "desarrollo" para probar nuevas funcionalidades o hacer pruebas y luego podemos llevarlo a la rama "master"
+
+para ver el estado del proyecto 
+	-git status
+
+para ver todos los commit que se han hecho (descripcion,rama y id)
+	-git log --oneline
+para volver a un estado de proyecto anterior
+	-git checkout <<id commit>>
+
+para eliminar un commit hacia adelante 
+	-git reset <<id commit>> --hard
+
+-todas las ramas son independientes, si tu creas una nueva rama, esta copiara todos los commit de la rama "master".
+-ademas si creas una nueva rama con otro archivo este no estara en la rama master porque son "independientes" 
+
+para ver todas las ramas
+	-git branch// la letra verde te indica en que rama te encuentras
+para cambiar de rama
+	-git checkout <<nombre de rama>>
